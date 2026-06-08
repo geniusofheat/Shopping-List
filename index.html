@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping List</title>
+
+  <meta name="theme-color" content="#c8a96e">
+  <link rel="manifest" href="shopping_list_manifest.json">
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600&family=Playfair+Display:wght@400;600&family=Space+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="shopping_list_stylesheet.css">
+</head>
+
+<body>
+
+<header>
+
+  <!-- ROW 1: Title + Date -->
+  <div class="header-row">
+    <h3 id="header-title">🛒 Shopping Lists</h3>
+    <div class="notepad-date" id="dateDisplay"></div>
+  </div>
+
+  <!-- ROW 2: Create New List -->
+  <div class="header-row header-create-row">
+    <h3 class="create-list-label">Create New List</h3>
+    <button class="orange-btn-44" onclick="create_new_list()">＋</button>
+  </div>
+
+</header>
+
+<main>
+
+  <!-- LISTS VIEW -->
+  <div id="lists-view">
+    <div class="notepad-body">
+      <div id="lists-container"></div>
+    </div>
+  </div>
+
+  <!-- LIST ITEMS VIEW -->
+  <div id="list-items-view" style="display:none;">
+
+    <!-- List title bar with back button -->
+    <div class="gold-block">
+      <h3 class="notepad-title" id="list-title-display"></h3>
+      <button class="orange-btn" id="headerBackBtn" onclick="back_to_lists()">← Back</button>
+    </div>
+
+    <!-- Checkbox item rows -->
+    <div class="notepad-body">
+      <div id="items-container"></div>
+    </div>
+
+  </div>
+
+  <!-- ADD ITEM INPUT ROW (shown only when a list is open) -->
+  <div class="gold-block" id="item-add-row" style="display:none;">
+    <input class="text-input" id="item-input" placeholder="Add an item...">
+    <button class="orange-btn-44" onclick="add_item()">＋</button>
+    <button class="orange-btn-44" onclick="voiceInput()">🎙</button>
+  </div>
+
+</main>
+
+<script src="shopping_list_data.js"></script>
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('shopping_list_service_worker.js');
+  }
+</script>
+
+</body>
+</html>
