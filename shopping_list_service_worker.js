@@ -1,8 +1,8 @@
 const CACHE_NAME = 'shopping-list-v1';
 const ASSETS = [
   'index.html',
-  'shopping_list.css',
-  'shopping_list.js',
+  'shopping_list_stylesheet.css',
+  'shopping_list_data.js',
   'shopping_list_manifest.json'
 ];
 
