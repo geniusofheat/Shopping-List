@@ -74,8 +74,8 @@ header {
 }
 
 .orange-btn-44 {
-  width: 16px;
-  height: 16px;
+  width: 44px;
+  height: 44px;
   padding: 4px;
   font-family: 'Playfair Display', serif;
   background: orange;
@@ -275,16 +275,15 @@ main::before {
   flex: 1 1 auto;
   min-width: 120px;
   height: 44px;
-  background: #1a1a2e;
+  background: #0000AD;
   border: none;
-  color: white;
   font-family: 'Crimson Pro', serif;
   font-size: 16px;
   outline: none;
 }
 
 .text-input::placeholder {
-  color: rgba(255, 255, 255, 0.45);
+  color: var(--gold);
   font-style: italic;
 }
 
@@ -295,6 +294,6 @@ main::before {
 .hidden { display: none !important; }
 
 .icon {
-	width: 44px;
-	height: 44px;
+	width: 16px;
+	height: 16px;
 }
