@@ -292,3 +292,8 @@ main::before {
 ===================== */
 
 .hidden { display: none !important; }
+
+.icon {
+	width: 44px;
+	height: 44px;
+}
