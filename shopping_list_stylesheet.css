@@ -285,6 +285,7 @@ main::before {
 .text-input::placeholder {
   color: var(--gold);
   font-style: italic;
+  background: #1a1a2e;
 }
 
 /* =====================
@@ -294,6 +295,6 @@ main::before {
 .hidden { display: none !important; }
 
 .icon {
-	width: 16px;
-	height: 16px;
+	width: 44px;
+	height: 44px;
 }
