@@ -109,7 +109,7 @@ main::before {
   top: 0; left: 50px;
   width: 1px;
   height: 100vh;
-  background: rgba(220, 80, 80, 0.4);
+  background: rgba(220, 80, 80, 0.1);
   pointer-events: none;
   z-index: 1;
 }
@@ -123,6 +123,7 @@ main::before {
   border: 2px solid var(--gold);
   display: flex;
   align-items: center;
+  background-color: var(--header-bg);
   padding: 5px;
   width: 100%;
   box-sizing: border-box;
@@ -276,7 +277,8 @@ main::before {
   flex: 1 1 auto;
   min-width: 120px;
   height: 44px;
-  background: var(--header-bg);
+  background: white;
+  color: var(--header-bg);
   border: none;
   font-family: 'Crimson Pro', serif;
   font-size: 16px;
@@ -284,7 +286,7 @@ main::before {
 }
 
 .text-input::placeholder {
-  color: var(--gold);
+  color: var(--header-bg);
   font-style: italic;
 }
 
