@@ -5,7 +5,7 @@ const ASSETS = [
   'shopping_list_data.js',
   'shopping_list_manifest.json',
   'icon-192.png',
-  'icon-512.png
+  'icon-512.png'
 ];
 
 self.addEventListener('install', e => {
