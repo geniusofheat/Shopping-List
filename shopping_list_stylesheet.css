@@ -274,7 +274,7 @@ main::before {
   flex: 1 1 auto;
   min-width: 120px;
   height: 44px;
-  background: transparent;
+  background: #1a1a2e;
   border: none;
   color: white;
   font-family: 'Crimson Pro', serif;
