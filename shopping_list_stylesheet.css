@@ -276,7 +276,7 @@ main::before {
   flex: 1 1 auto;
   min-width: 120px;
   height: 44px;
-  background: #0000AD;
+  background: var(--header-bg);
   border: none;
   font-family: 'Crimson Pro', serif;
   font-size: 16px;
@@ -286,7 +286,6 @@ main::before {
 .text-input::placeholder {
   color: var(--gold);
   font-style: italic;
-  background: #1a1a2e;
 }
 
 /* =====================
